@@ -1,0 +1,53 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"name": "WiFiConfig",
+			"path": "../WiFiConfig"
+		},
+		{
+			"name": "WebServerSimple",
+			"path": "../WebServerSimple"
+		},
+		{
+			"name": "AFT-WK4-Firmware-V1.16",
+			"path": "../AFT-WK4-Firmware-V1.16"
+		},
+		{
+			"name": "funcoes",
+			"path": "../funcoes"
+		},
+		{
+			"name": "AFT-WK4-Firmware-V1.17",
+			"path": "../AFT-WK4-Firmware-V1.17"
+		},
+		{
+			"name": "AFT-WK2-Firmware-V1.17",
+			"path": "../AFT-WK2-Firmware-V1.17"
+		},
+		{
+			"name": "esp_paramsn",
+			"path": "../esp_paramsn"
+		},
+		{
+			"name": "Chave_Rele-02",
+			"path": "../Chave_Rele-02"
+		},
+		{
+			"name": "AFT-WIO2-Firmware-V1.17",
+			"path": "../AFT-WIO2-Firmware-V1.17"
+		},
+		{
+			"name": "modbusTCPIP01",
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"cstdlib": "cpp",
+			"random": "cpp"
+		}
+	}
+}
