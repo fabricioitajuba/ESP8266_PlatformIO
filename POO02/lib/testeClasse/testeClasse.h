@@ -6,15 +6,17 @@
 //Classe Barramento_I2C
 class Barramento_I2C{ 
   
-  public: // Especificador de acesso público
+  public: //Especificador de acesso público
     Barramento_I2C(String _Dispositivo, byte _Address, int _SCL, int _SDA); //Método construtor com parâmetros
+    Barramento_I2C(byte _Address, int _SCL, int _SDA); //Sobrecarga de método construtor "POLIMORFISMO"
+    Barramento_I2C(int _SCL, int _SDA); //Sobrecarga de método construtor "POLIMORFISMO"
 
     String getDispositivo(); //Método getDispositivo 
     uint8 getAddress(); //Método getAddress
     int getSCL();       //Método getSCL
     int getSDA();       //Método getSDA
 
-  private:
+  private: //Especificador de acesso privado
     String Dispositivo; //Parâmetro privado
     uint8 Address;  //Parâmetro privado
     int SCL, SDA;   //Parâmetro privado

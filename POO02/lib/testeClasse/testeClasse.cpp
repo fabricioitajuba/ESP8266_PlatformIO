@@ -9,6 +9,19 @@ Barramento_I2C::Barramento_I2C(String _Dispositivo, byte _Address, int _SCL, int
     setSDA(_SDA);
 }
 
+//Sobrecarga de métodos construtor com parâmetros "POLIMORFISMO"
+Barramento_I2C::Barramento_I2C(byte _Address, int _SCL, int _SDA){
+   
+    setAddress(_Address);
+    setSCL(_SCL);
+    setSDA(_SDA);
+}
+
+//Sobrecarga de métodos construtor com parâmetros "POLIMORFISMO"
+Barramento_I2C::Barramento_I2C(int _SCL, int _SDA): SCL(_SCL), SDA(_SDA){
+   //Outra maneira de inicializar um método construtor
+}
+
 //Getters
 String Barramento_I2C::getDispositivo(){
     return Dispositivo;
