@@ -55,3 +55,4 @@ void Barramento_I2C::setSCL(int __SCL){
 void Barramento_I2C::setSDA(int __SDA){
     SDA = __SDA;
 }
+

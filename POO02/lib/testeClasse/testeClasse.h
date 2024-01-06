@@ -16,6 +16,9 @@ class Barramento_I2C{
     int getSCL();       //Método getSCL
     int getSDA();       //Método getSDA
 
+    int pin_SCL;        //Atributo público
+    int pin_SDA;        //Atributo público
+
   private: //Especificador de acesso privado
     String Dispositivo; //Parâmetro privado
     uint8 Address;  //Parâmetro privado
@@ -26,5 +29,14 @@ class Barramento_I2C{
     void setSCL(int __SCL); //Método setSCL (encapsulamento)
     void setSDA(int __SDA); //Método setSDA (encapsulamento)
  };
+
+
+//Classe "I2C" sendo uma "HERANÇA" da clase "Barramento_I2C"
+class I2C:public Barramento_I2C{
+  
+  public:
+    I2C(int _pin_SCL, int _pin_SDA);
+
+};
 
 #endif
